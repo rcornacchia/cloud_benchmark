@@ -1,0 +1,11 @@
+{
+  "name": "cloud-benchmark",
+  "version": "1.0.0",
+  "description": "Small package for testing multiple cloud hosts at once.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Cornacchia <rlc2160@columbia.edu> (robraven.com)",
+  "license": "ISC"
+}
