@@ -16,9 +16,7 @@ application Side:
     -configure routes to repeat routes to each cloud instance
         GET requests --> GET page from each instance
         POST requests --> copy parameters and send new POST request to each instance
-        Callback stops timer on response and then sends response to client
-
-
+        Callback stops timer on response and stores time elapsed in MongoDB
 
         POST request parameters:
         1) First convert to string with JSON.stringify
@@ -49,3 +47,7 @@ test_clouds() {
         store result in Mongod
     }
 }
+
+
+IF WE HAVE TIME:
+-add http:// to endpoint if it doesn't have it

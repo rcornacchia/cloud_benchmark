@@ -1,42 +1,25 @@
 var cb = require('cloud-benchmark');
+var request = require('request');
 var express = require('express');
 var app = express();
 var path = require('path');
 
+// add aws instance
+cb.insertCloud("http://ec2-54-191-23-14.us-west-2.compute.amazonaws.com/");
+cb.printClouds();
+
+
+// cb.addRoute("GET", "/", "parameters");
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
+    console.log(cb.routes);
+    cb.testRoute("GET", "/", "parameters");
+
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(8080);
-console.log("Server started on port 8080.");
+// set interval for testing
 
 
-
-
-
-
-
-
-
-
-
-
-
-//
-// console.log(cb.clouds);
-//
-// // cb.clouds = ["test"];
-// cb.insertCloud("x");
-//
-// console.log(cb.clouds);
-//
-// cb.remove("x");
-//
-// cb.printClouds();
-//
-//
-//
-// // testing routes
-// cb.addRoute("GET", "Google.com", "parameters");
-// console.log(cb.routes);
+app.listen(80);
+console.log("Server started on port 80.");

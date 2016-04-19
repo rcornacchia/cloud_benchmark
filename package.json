@@ -8,6 +8,8 @@
   },
   "dependencies" : {
     "cloud-benchmark" : "*",
-    "express" : "*" 
+    "express" : "*",
+    "request" : "*",
+    "mongodb" : "*"
   }
 }
