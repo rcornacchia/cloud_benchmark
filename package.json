@@ -1,0 +1,22 @@
+{
+  "name": "TSE",
+  "version": "1.0.0",
+  "description": "TODO:",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "cloud-benchmark" : "*"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rcornacchia/cloud_benchmark.git"
+  },
+  "author": "Robert Cornacchia <rlc2160@columbia.edu> (robraven.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcornacchia/cloud_benchmark/issues"
+  },
+  "homepage": "https://github.com/rcornacchia/cloud_benchmark"
+}
