@@ -5,19 +5,23 @@ var app = express();
 var path = require('path');
 
 // add aws instance
-cb.insertCloud("http://ec2-54-191-23-14.us-west-2.compute.amazonaws.com/");
+cb.insertCloud("http://ec2-54-186-73-1.us-west-2.compute.amazonaws.com");
 // cb.insertCloud("http://ec2-54-186-10-38.us-west-2.compute.amazonaws.com");
 cb.printClouds();
 
 
-// cb.addRoute("GET", "/", "parameters");
+cb.addRoute("GET", "/", "parameters");
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
     console.log(cb.routes);
-    cb.testRoute("GET", "/", "parameters");
+    cb.testRoute("GET", "/");
+    cb.testRoute("POST", "/addTodo", )
 
     res.sendFile(path.join(__dirname + '/index.html'));
 });
+
+app.post('/addTodo', )
+
 cb.number_of_trials(100);
 
 // set interval for testing in hours
