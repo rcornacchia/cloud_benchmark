@@ -6,6 +6,7 @@ var path = require('path');
 
 // add aws instance
 cb.insertCloud("http://ec2-54-191-23-14.us-west-2.compute.amazonaws.com/");
+// cb.insertCloud("http://ec2-54-186-10-38.us-west-2.compute.amazonaws.com");
 cb.printClouds();
 
 
@@ -17,9 +18,10 @@ app.get('/', function(req, res) {
 
     res.sendFile(path.join(__dirname + '/index.html'));
 });
+cb.number_of_trials(100);
 
-// set interval for testing
+// set interval for testing in hours
+cb.interval(6);
 
-
-app.listen(80);
+app.listen(8000);
 console.log("Server started on port 80.");

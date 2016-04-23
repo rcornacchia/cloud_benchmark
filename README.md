@@ -1,5 +1,24 @@
 # cloud_benchmark
 
+Workflow:
+1) Add clouds to test
+2) Add routes to test
+3) Specify interval in hours throughout the day to test (6 ==> 12AM, 6AM, 12PM, 6PM)
+4) Specify number of tests to run at each time_of_day
+5) setTimeout(interval)
+    -when timer finishes:
+        -iterate through each route, and test each cloud connection
+        -store results in elasticSearch
+6) generateResults.js
+    Node generateResults.js
+        -go through each route and graph the results
+7) Results.html
+    -template to
+
+
+
+
+
 TODO:
 
 package:

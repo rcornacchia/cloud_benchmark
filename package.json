@@ -10,6 +10,7 @@
     "cloud-benchmark" : "*",
     "express" : "*",
     "request" : "*",
-    "mongodb" : "*"
+    "mongodb" : "*",
+    "elasticSearch" : "*"
   }
 }
