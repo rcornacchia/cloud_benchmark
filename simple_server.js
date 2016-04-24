@@ -6,14 +6,14 @@ var todos = new Array();
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
+    extended: true
 }));
 
 app.get('/', function (req, res) {
     res.send('Welcome to todos!');
 });
 
-app.get('/todos', function (req, res) {
+app.get('/getTodos', function (req, res) {
     res.send(todos);
 });
 
