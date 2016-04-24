@@ -16,9 +16,7 @@ app.get('/', function (req, res) {
 app.post('/addTodo', function(req, res) {
     console.log(req.body.todo);
     todos.push(req.body.todo);
-    todos.splice(index, 1);
     console.log("Todos list: " + todos);
-
     res.send("Todo successfully added!");
 });
 
