@@ -10,7 +10,11 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.get('/', function (req, res) {
-    res.send('');
+    res.send('Welcome to todos!');
+});
+
+app.get('/todos', function (req, res) {
+    res.send(todos);
 });
 
 app.post('/addTodo', function(req, res) {
