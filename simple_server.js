@@ -24,14 +24,12 @@ app.post('/removeTodo', function(req, res) {
     console.log(req.body.todo);
     var index = todos.indexOf(req.body.todo);
     if(index >= 0){
-        console.log("removing todo");
         todos.splice(index, 1);
         res.send("Todo successfully removed.");
     } else {
-        console.log("todo doesn't exist");
         res.send("Todo does not exist.");
     }
-    console.log("Todos list: " + todos + " index = " + index);
+    console.log("Todos list: " + todos);
 });
 
 app.listen(80, function () {
