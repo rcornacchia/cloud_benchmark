@@ -6,6 +6,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/addTodo', function(req, res) {
+    console.log(req.body);
     res.send("Todo successfully added!");
 });
 

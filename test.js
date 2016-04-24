@@ -15,6 +15,9 @@ var todo = {
 
 cb.addRoute("GET", "/");
 cb.addRoute("POST", "/addTodo", todo);
+// cb.addRoute("POST", "/deleteTodo", todo);
+// cb.addRoute("GET", "/getTodos");
+
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
     console.log(cb.routes);
