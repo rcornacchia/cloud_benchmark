@@ -12,6 +12,7 @@
     "request" : "*",
     "mongodb" : "*",
     "elasticSearch" : "*",
-    "sleep" : "*"
+    "sleep" : "*",
+    "body-parser" : "*"
   }
 }
