@@ -22,7 +22,7 @@ app.post('/addTodo', function(req, res) {
 
 app.post('/removeTodo', function(req, res) {
     console.log(req.body.todo);
-    var index = todos.indexOf(5);
+    var index = todos.indexOf(req.body.todo);
     if(index != null){
         todos.splice(index, 1);
         res.send("Todo successfully removed.");
@@ -30,7 +30,7 @@ app.post('/removeTodo', function(req, res) {
         res.send("Todo does not exist.");
     }
 
-    console.log("Todos list: " + todos);
+    console.log("Todos list: " + todos + " index = " + index);
 });
 
 app.listen(80, function () {
