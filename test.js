@@ -6,7 +6,7 @@ var path = require('path');
 
 // add aws instance
 cb.insertCloud("http://ec2-54-186-73-1.us-west-2.compute.amazonaws.com");
-// cb.insertCloud("http://ec2-54-186-10-38.us-west-2.compute.amazonaws.com");
+cb.insertCloud("https://sleepy-shelf-49558.herokuapp.com/");
 cb.printClouds();
 
 var todo = {
@@ -31,6 +31,7 @@ cb.number_of_trials(100);
 
 // set interval for testing in hours
 cb.interval(6);
+cb.total_time = 24;
 
 cb.startBenchmark();
 
