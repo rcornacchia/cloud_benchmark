@@ -13,25 +13,25 @@ customize their very own benchmarks to test their node.js apps and all its quirk
 
 Follow the steps below to learn how to use cloud-benchmark.
 
-# 1 Installation
+## 1 Installation
 Add cloud benchmark to your package.json file to maintain most uptodate version.
 ```javascript
 "cloud-benchmark" : "*"
 ```
 
-# 2 Import package
+## 2 Import package
 ```javascript
 var cb = require('cloud-benchmark');
 ```
 
-# 3 Add clouds to test
+## 3 Add clouds to test
 After deploying your application on different cloud hosts, add the url of each host.
 ```javascript
 cb.insertCloud("http://ec2-54-186-73-1.us-west-2.compute.amazonaws.com");
 cb.insertCloud("https://sleepy-shelf-49558.herokuapp.com/");
 ```
 
-# 4 Add routes
+## 4 Add routes
 Add the routes of your nodejs application that you'd like to test.
 For POST requests, add the parameters.
 ```javascript
@@ -41,22 +41,22 @@ cb.addRoute("POST", "/deleteTodo", todo);
 cb.addRoute("GET", "/getTodos");
 ```
 
-# 5 Specify interval of time to run tests
+## 5 Specify interval of time to run tests
 The test will run every x number of hours.
 x = the interval you set here.
 ```javascript
 cb.interval(6);
 ```
 
-# 6 Specify number of intervals to run
+## 6 Specify number of intervals to run
 ```javascript
 cb.number_of_intervals = 4;
 ```
 
-# 7 Start benchmark
+## 7 Start benchmark
 ```javascript
 cb.startBenchmark();
 ```
 
-# 8 Generate Report
+## 8 Generate Report
 Cloud-benchmark will automatically generate this for you once the benchmark is complete.
