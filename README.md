@@ -1,5 +1,17 @@
-# cloud_benchmark
-An npm package to easily benchmark cloud host providers.
+# cloud-benchmark
+## An npm package to easily benchmark cloud host providers.
+Every day, more and more cloud hosts clutter the web.  
+Which one is right for you?  
+Usually this answer falls heavily on which cloud host offers the best performance.  
+Testing takes time and precious development hours.  
+Cloud-benchmark is a simple to use npm package to help developers determine which cloud
+host is the fastest for their specific application.
+General benchmarks are helpful, but with cloud-benchmark, developers can quickly
+customize their very own benchmarks to test their node.js apps and all its quirks.
+
+### After all, nobody know yours app better than you.
+
+Follow the steps below to learn how to use cloud-benchmark.
 
 # 1 Installation
 Add cloud benchmark to your package.json file to maintain most uptodate version.
@@ -42,6 +54,11 @@ cb.number_of_intervals = 4;
 ```
 
 # 7 Start benchmark
+```javascript
+cb.startBenchmark();
+```
+
+# 8
 ```javascript
 cb.startBenchmark();
 ```
