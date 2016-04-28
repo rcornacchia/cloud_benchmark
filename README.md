@@ -63,3 +63,4 @@ cb.startBenchmark();
 
 ## 8 Generate Report
 Cloud-benchmark will automatically generate this for you once the benchmark is complete.
+Simply open report.js.
