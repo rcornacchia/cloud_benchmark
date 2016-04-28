@@ -6,10 +6,10 @@ Add "cloud-benchmark" : " * " to your package.json file to maintain most uptodat
 
 # Add clouds to test
 After deploying your application on different cloud hosts, add the url of each host.
-'''javascript
+```javascript
 cb.insertCloud("http://ec2-54-186-73-1.us-west-2.compute.amazonaws.com");
 cb.insertCloud("https://sleepy-shelf-49558.herokuapp.com/");
-'''
+```
 
 
 
