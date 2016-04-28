@@ -58,7 +58,5 @@ cb.number_of_intervals = 4;
 cb.startBenchmark();
 ```
 
-# 8
-```javascript
-cb.startBenchmark();
-```
+# 8 Generate Report
+Cloud-benchmark will automatically generate this for you once the benchmark is complete.
