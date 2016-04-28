@@ -27,10 +27,11 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-cb.number_of_trials(100);
-
 // set interval for testing in hours
 cb.interval(6);
+
+cb.number_of_trials(100);
+
 cb.number_of_intervals = 4;
 
 cb.startBenchmark();
