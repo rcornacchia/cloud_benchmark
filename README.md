@@ -10,7 +10,7 @@ host is the fastest for their specific application.
 General benchmarks are helpful, but with cloud-benchmark, developers can quickly
 customize their very own benchmarks to test their node.js apps and all its quirks.
 
-### After all, nobody know yours app better than you.
+### After all, nobody know your app better than you.
 
 Follow the steps below to learn how to use cloud-benchmark.
 
