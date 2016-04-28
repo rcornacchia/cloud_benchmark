@@ -1,5 +1,5 @@
 # cloud-benchmark
-## An npm package to easily benchmark cloud host providers.
+### An npm package to easily benchmark cloud host providers.
 Every day, more and more cloud hosts clutter the web.  
 Which one is right for you?  
 Usually this answer falls heavily on which cloud host offers the best performance.  
