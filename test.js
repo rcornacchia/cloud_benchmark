@@ -31,7 +31,7 @@ cb.number_of_trials(100);
 
 // set interval for testing in hours
 cb.interval(6);
-cb.total_time = 24;
+cb.number_of_intervals = 4;
 
 cb.startBenchmark();
 
