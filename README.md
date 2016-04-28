@@ -43,15 +43,17 @@ cb.addRoute("GET", "/getTodos");
 ```
 
 ## 5 Specify interval of time to run tests
-The test will run every x number of hours.
-x = the interval you set here.
+The test will run every x number of hours, and perform y tests.
+cb.interval(x,y)
 ```javascript
-cb.interval(6);
+cb.interval(6, 4);
 ```
+So, in this example, the benchmark will run every 6 hours and will undergo
+4 intervals.
 
-## 6 Specify number of intervals to run
+## 6 Specify number of trials to run
 ```javascript
-cb.number_of_intervals = 4;
+cb.number_of_trials = 100;
 ```
 
 ## 7 Start benchmark

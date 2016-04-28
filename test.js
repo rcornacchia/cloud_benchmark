@@ -27,8 +27,9 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-// set interval for testing in hours
-cb.interval(6);
+// set interval for testing in hours, and how many intervals to run
+// this represents 6 hour intervals, 4 times
+cb.interval(6, 4);
 
 cb.number_of_trials(100);
 
