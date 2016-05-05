@@ -7,6 +7,7 @@ var path = require('path');
 // add aws instance
 cb.insertCloud("http://ec2-54-186-73-1.us-west-2.compute.amazonaws.com");
 cb.insertCloud("https://sleepy-shelf-49558.herokuapp.com/");
+cb.insertCloud("http://simpleserver-62881.onmodulus.net/");
 cb.printClouds();
 
 var todo = {

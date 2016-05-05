@@ -7,10 +7,10 @@ var todo = {
     'todo' : 'Finish TSE Project'
 }
 
-url = "https://sleepy-shelf-49558.herokuapp.com/"
+url = "https://simple-server-1302.appspot.com/"
 // Add todo
 request({
-    url: 'https://sleepy-shelf-49558.herokuapp.com/addTodo', //URL to hit
+    url: 'https://simple-server-1302.appspot.com/addTodo', //URL to hit
     method: 'POST',
     form: todo
 }, function(error, response, body){
@@ -22,16 +22,16 @@ request({
 });
 
 // get todos
-request('https://sleepy-shelf-49558.herokuapp.com/getTodos', function (error, response, body) {
+request('https://simple-server-1302.appspot.com/getTodos', function (error, response, body) {
     if (!error && response.statusCode == 200) {
         console.log(body) // Show the HTML for the Google homepage.
     }
 });
-var z = url + '/removeTodo'
+// var z = url + '/removeTodo'
 
 // remove todo
 request({
-    url: 'https://sleepy-shelf-49558.herokuapp.com/removeTodo', //URL to hit
+    url: 'https://simple-server-1302.appspot.com/removeTodo', //URL to hit
     method: 'POST',
     form: todo
 }, function(error, response, body){
