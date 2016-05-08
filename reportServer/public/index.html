@@ -1,0 +1,40 @@
+<html>
+<body>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <!-- <scripts src ="elasticsearch-js/elasticsearch.min.js"></scripts> -->
+    <script src="bower_components/elasticsearch/elasticsearch.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.1/Chart.bundle.js"></script>
+
+    <h1>Cloud-Benchmark Report:</h1>
+    </br>
+    <h2>Static Routes</h2>
+    </br>
+    <h3>GET Index.html</h3>
+    <div>
+        <canvas id="myChart" width="400" height="400" style="width: 400; height: 400;"></canvas>
+    </div>
+    </br>
+    <h2>Dynamic Routes</h2>
+    </br>
+    <div>
+        <h3>POST /addTodo</h3>
+        <canvas id="myChart2" width="400" height="400" style="width: 400; height: 400;"></canvas>
+    </div>
+    </br>
+    <div>
+        <h3>GET /getTodos</h3>
+        <canvas id="myChart3" width="400" height="400" style="width: 400; height: 400;"></canvas>
+    </div>
+    </br>
+    <div>
+        <h3>POST /deleteTodo</h3>
+        <canvas id="myChart4" width="400" height="400" style="width: 400; height: 400;"></canvas>
+    </div>
+
+    <script src="searchDB.js" /></script>
+
+
+</body>
+</html>
