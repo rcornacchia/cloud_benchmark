@@ -63,4 +63,11 @@ cb.startBenchmark();
 
 ## 8 Generate Report
 Cloud-benchmark will automatically generate this for you once the benchmark is complete.
-Simply open report.js.
+Simply run node server with
+'''javascript
+node server.js
+'''
+And then navigate to localhost:8000 in any web browser to view the report.  
+The report is generated locally.  
+An example of a graph is
+![alt tag](./graph.png)
