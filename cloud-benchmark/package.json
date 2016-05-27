@@ -8,7 +8,8 @@
   },
   "dependencies" : {
       "request" : "*",
-      "mongodb" : "*"
+      "mongodb" : "*",
+      "express" : "*"
   },
   "author": {
     "name": "Robert Cornacchia",
